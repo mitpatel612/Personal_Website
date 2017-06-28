@@ -1,0 +1,75 @@
+*{margin:0; padding:0;}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #e2e2e2;
+    margin: 1em 0;
+    padding: 0; 
+}
+body{
+	background-color: #fcfcfc;
+}
+* {
+    box-sizing: border-box;
+}
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+.topnav ul{
+    position: fixed;
+    top:0;
+    z-index: 1;
+	list-style-type: none;
+	overflow: hidden;
+	width: 100%;
+	background: rgba(95,95,95,1);
+}
+.topnav ul li{
+	float: right;
+	text-align: center;
+    font-size: 25px;
+}
+.topnav ul li a{
+	display: block;
+	padding: 12px;
+	color: white;
+	text-decoration: none;
+}
+.topnav ul li a:active{
+	background-color: #0c73af;
+	color:white;
+}
+.topnav ul li a:hover:not(.active) {
+	background-color: #111111;
+	color: white;
+}
+.mp-margintop60{margin-top:60px;}
+.mp-padding16{padding-top:16px!important;padding-bottom:16px!important}
+
+.mp_container{padding:0.05em 16px; font-family: arial;}
+.mp_container h2{margin: 1px; font-size: 30px}
+.icon-margin-right{margin-right:16px}
+.mp_container h5{font-size: 18px;}
+
+.flex-footer-container{display:flex; justify-content: center;}
+.flex-footer-item{height: 100px; width:100px; margin:20px}
+footer p{margin: 5px; font-size:14px; text-align:center;}
+
