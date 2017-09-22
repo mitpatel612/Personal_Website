@@ -13,6 +13,16 @@ body{
 * {
     box-sizing: border-box;
 }
+.mp-row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+}
+
 /* For mobile phones: */
 [class*="col-"] {
     width: 100%;
@@ -32,7 +42,6 @@ body{
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
 }
-
 .topnav ul{
     position: fixed;
     top:0;
@@ -45,7 +54,7 @@ body{
 .topnav ul li{
 	float: right;
 	text-align: center;
-    font-size: 25px;
+    font-size: 20px;
 }
 .topnav ul li a{
 	display: block;
@@ -61,15 +70,28 @@ body{
 	background-color: #111111;
 	color: white;
 }
-.mp-margintop60{margin-top:60px;}
+
+
+.anchor-padding{padding-top: 60px!important;}
+.anchor-padding-bot{padding-bottom: 60px!important;}
+//.mpcontainerlogo{padding:0.05em 16px;}
+.comp-logo, .edu-logo, {display:block; margin: auto;}
+.mypic{display: block; margin:auto; border-radius:50%; height:300px; width:300px;}
+.mypic{transition: all 0.8s ease-in-out;}
+.mypic:hover{height:600px; width:600px;}
+
+
 .mp-padding16{padding-top:16px!important;padding-bottom:16px!important}
 
-.mp_container{padding:0.05em 16px; font-family: arial;}
-.mp_container h2{margin: 1px; font-size: 30px}
+.mp_container{padding:0.05em 60px; font-family: arial;}
+.mp_container h2{margin: 1px; font-size: 400%; font-weight:bold; text-align:center;}
 .icon-margin-right{margin-right:16px}
 .mp_container h5{font-size: 18px;}
 
+
+.contact-link:hover {box-shadow: 10px 2px 5px rgba(0,0,0,0.6);border-radius:100px;}
+
 .flex-footer-container{display:flex; justify-content: center;}
 .flex-footer-item{height: 100px; width:100px; margin:20px}
-footer p{margin: 5px; font-size:14px; text-align:center;}
 
+footer p{margin: 5px; font-size:14px; text-align:center;}
